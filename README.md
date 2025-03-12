@@ -13,7 +13,7 @@
 
 For a live demonstration, check out the demo video below:
 
-![Demo GIF](./demo.gif)
+![Demo GIF](https://raw.githubusercontent.com/mohanaprasathtech/liquid-wave-animate-button/main/demo.gif)
 
 ## Installation
 
