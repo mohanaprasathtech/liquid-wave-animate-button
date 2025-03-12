@@ -1,7 +1,7 @@
 # Liquid Wave Animate Button
 ## Demo
 For a live demonstration, check out the demo video below:
-![Demo GIF](https://raw.githubusercontent.com/mohanaprasathtech/liquid-wave-animate-button/main/demo.gif)
+<img src="https://raw.githubusercontent.com/mohanaprasathtech/liquid-wave-animate-button/main/demo.gif" height="350" />
 
 **Liquid Wave Animate Button** is a Flutter widget that provides a customizable button with an animated liquid fill effect. Easily add dynamic liquid animations to your UI with configurable properties like fill level, border, text style, and more. You can also disable the liquid effect altogether for a cleaner look.
 
