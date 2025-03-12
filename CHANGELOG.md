@@ -1,3 +1,3 @@
-## 0.0.1
-
-* TODO: Describe initial release.
+# Changelog 1.0.3
+## 
+### Upadted READ.md file and added Example usage code

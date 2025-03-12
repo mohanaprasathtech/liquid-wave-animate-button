@@ -1,6 +1,6 @@
 name: liquid_wave_animate_button
 description: A Flutter package that provides a customizable liquid wave animate button with dynamic liquid fill effects for modern UIs.
-version: 0.0.1
+version: 1.0.3
 homepage: https://github.com/mohanaprasathtech/liquid-wave-animate-button.git
 repository: https://github.com/mohanaprasathtech/liquid-wave-animate-button.git
 license: MIT
