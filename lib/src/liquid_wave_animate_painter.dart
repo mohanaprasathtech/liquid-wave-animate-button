@@ -11,6 +11,8 @@ class LiquidWaveAnimatePainter extends CustomPainter {
   final double borderWidth;
   final Color backgroundColor;
   final bool showLiquid;
+  final double waveAmplitude;
+  final double waveFrequency;
 
   LiquidWaveAnimatePainter({
     required this.waveValue,
@@ -20,6 +22,8 @@ class LiquidWaveAnimatePainter extends CustomPainter {
     required this.borderWidth,
     required this.backgroundColor,
     required this.showLiquid,
+    required this.waveAmplitude,
+    required this.waveFrequency,
   });
 
   @override
@@ -40,8 +44,6 @@ class LiquidWaveAnimatePainter extends CustomPainter {
       canvas.clipRRect(buttonRRect);
 
       final double waveBaseline = size.height * (1.0 - fillValue);
-      const double waveAmplitude = 8.0;
-      const double waveFrequency = 2.0;
 
       final Path wavePath = Path()
         ..moveTo(0, size.height)

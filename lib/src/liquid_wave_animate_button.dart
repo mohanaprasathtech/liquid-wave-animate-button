@@ -28,6 +28,8 @@ class LiquidWaveAnimateButton extends StatefulWidget {
   final TextStyle textStyle;
   final Color backgroundColor;
   final VoidCallback? onPressed;
+  final double waveAmplitude;
+  final double waveFrequency;
 
   const LiquidWaveAnimateButton({
     Key? key,
@@ -38,7 +40,8 @@ class LiquidWaveAnimateButton extends StatefulWidget {
     this.liquidColor = Colors.blue,
     required this.ariseAnimation,
     this.ariseDuration = const Duration(seconds: 2),
-    this.borderColor = const Color(0x4DFFFFFF), // Default: white with 30% opacity.
+    this.borderColor =
+        const Color(0x4DFFFFFF), // Default: white with 30% opacity.
     this.borderWidth = 2.0,
     this.textStyle = const TextStyle(
       color: Colors.white,
@@ -46,6 +49,8 @@ class LiquidWaveAnimateButton extends StatefulWidget {
     ),
     this.backgroundColor = Colors.transparent,
     this.onPressed,
+    this.waveAmplitude = 8.0,
+    this.waveFrequency = 2.0,
   }) : super(key: key);
 
   @override
@@ -118,7 +123,9 @@ class _LiquidWaveAnimateButtonState extends State<LiquidWaveAnimateButton>
             borderColor: widget.borderColor,
             borderWidth: widget.borderWidth,
             backgroundColor: widget.backgroundColor,
-            showLiquid: widget.ariseAnimation, // controls liquid drawing
+            showLiquid: widget.ariseAnimation,
+            waveAmplitude: widget.waveAmplitude,
+            waveFrequency: widget.waveFrequency,
           ),
           child: SizedBox(
             width: widget.width,

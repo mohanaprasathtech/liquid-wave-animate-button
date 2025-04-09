@@ -19,4 +19,4 @@ Add the following to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  liquid_wave_animate_button: ^1.0.3
+  liquid_wave_animate_button: ^1.0.4
