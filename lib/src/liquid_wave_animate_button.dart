@@ -30,6 +30,7 @@ class LiquidWaveAnimateButton extends StatefulWidget {
   final VoidCallback? onPressed;
   final double waveAmplitude;
   final double waveFrequency;
+  final BorderRadiusGeometry borderRadius;
 
   const LiquidWaveAnimateButton({
     Key? key,
@@ -51,6 +52,7 @@ class LiquidWaveAnimateButton extends StatefulWidget {
     this.onPressed,
     this.waveAmplitude = 8.0,
     this.waveFrequency = 2.0,
+    this.borderRadius = const BorderRadius.all(Radius.circular(30.0)),
   }) : super(key: key);
 
   @override
@@ -150,9 +152,8 @@ class _LiquidWaveAnimateButtonState extends State<LiquidWaveAnimateButton>
             width: widget.width,
             height: widget.height,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(widget.height / 2),
-              color: Colors.black.withOpacity(0.2),
-            ),
+                borderRadius: widget.borderRadius,
+                color: Colors.black.withAlpha((255.0 * 0.2).round())),
           ),
       ],
     );
